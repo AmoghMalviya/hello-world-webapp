@@ -7,16 +7,11 @@ pipeline {
                
                 
                 // Clone the GitHub repository
-                git url: '',branch: 'main'
+                git url: 'https://github.com/AmoghMalviya/hello-world-webapp.git',branch: 'main'
             }
         }
         
-        stage('Build') {
-            steps {
-                // Build your Maven project
-                sh 'mvn clean package'
-            }
-        }
+       
         
         // Add more stages as per your deployment and Docker image build/push steps
     }
